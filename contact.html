@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- 基本構文「！」貼り付け -->
+<!-- 改行は意味ない。（半角スペースになるだけ） -->
+<!-- CTR+Sで整形（自動保存） -->
+<html lang="ja">
+<head>
+    <!-- ヘッダーの情報 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- UTFは文字コード（化けないように必要） -->
+    <title>お問い合わせ - WebDesign</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body id="top">
+    <div class="container">
+        <header>
+            <!-- メモ書きは文字を選択してCTR＋/ でコメント＜！－－＞になる -->
+            <!-- 候補を出す「CTR＋スペース」→↓↑で選択→ENTER -->
+            <!-- ALT+↓↑で行変更 -->
+            <h1><a href="index.html">WebDesign</a></h1>
+            <!-- サイト名はh1（大見出し）で囲む -->
+        </header>
+        <nav>
+            <!-- 「NAV＝主要なメニュー」 -->
+            <!-- メニューはリストul-liタグをセットで使う -->
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+
+                <li><a href="next.html">下層ページの構成</a></li>
+
+                <li><a href="contact.html">class="active"お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+        <!-- IMG使うときSRCが必須属性（属性は所属。要素ははじまり～おわり） -->
+        <!-- IMGにも意味をつける。（迷ったらp) -->
+        <!-- IMG　空要素。（はさむものがない。おわりがない。） -->
+        <!-- ALT　表示なくても読み上げ君のため。 -->
+
+        <main>
+            <article>
+                <!-- 文字選択してALT＋Wで囲まれる -->
+                <!-- CTR＋WはCLOSE（消える）なので注意 -->
+                <h1>お問い合わせ</h1>
+                <p>WebDesignについてのご質問・ご意見は、下記フォームよりお気軽にお問い合わせください。</p>
+                <aside>
+                    <ul>
+                        <li>
+                            必要事項を記入し、「送信」をクリックしてください。</li>
+                        <li>ご登録いただいた個人情報は、お問い合わせ内容の確認以外には使用いたしません。</li>
+                        <li>※は必須項目です。</li>
+                    </ul>
+                </aside>
+                <form action="#" method="post">
+                    <dl>
+                        <div>
+                            <dt>お名前<span>※</span></dt>
+                            <dd><input type="text" placeholder="ウェブデザ　花子" (required>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt>メールアドレス<span>※</span></dt>
+                            <dd><input type="email" placeholder="info@gamail.com" required> </dd>
+                        </div>
+
+                        <div>
+                            <dt>お問い合わせの種類</dt>
+
+
+                            <dd>
+
+                                <label>
+                                    <input type="radio" name="category" checked>
+                                    ご質問
+                                </label>
+                                <label>
+                                    <input type="radio" name="category">
+                                    お問い合わせ
+                                </label>
+                            </dd>
+                        </div>
+                        <div>
+                            <dt>内容</dt>
+                            <dd><textarea></textarea>
+                            </dd>
+                        </div>
+                    </dl>
+                    <p><button>送信</button></p>
+                </form>
+            </article>
+        </main>
+    </div>
+    <footer>
+        <p class="pagetop"><a href="#top"><img src="img/gotop.svg" width="32" height="32" alt="ページトップへ"></a></p>
+        <p class=""><small>&copy;2021 WebDesign. All Rights Reserved.</small></p>
+    </footer>
+</body>
+</html>
+<!-- 左下0/0でエラーチェック -->
